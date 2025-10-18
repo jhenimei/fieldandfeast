@@ -61,10 +61,129 @@ table {
     --linen: #F8F4EC;
     --dark-charcoal: #2B2B2B;
     --soft-white: #F4F9F6;
+
+    /* Site theme font */
+    --playfair-display: "Playfair Display", serif;
 }
 
 /* GLOBAL STYLES (mobile first/small) */
+h1, h2, h3, p, li, a, address {
+    font-family: var(--playfair-display);
+}
 
+/* header styles */
+header {
+    background-color: var(--midnight-blue);
+
+    padding: 1em;
+    text-align: center;
+}
+
+header img {
+    width: 40%;
+
+    display: block;
+    margin: 0 auto;
+}
+
+h1, header p {
+    color: var(--soft-white);
+
+    line-height: 1.5em;
+}
+
+h1 {
+    font-size: 2.8em;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 0.87em;
+    font-style: italic;
+}
+
+/* nav styles */
+nav {
+    background-color: var(--champagne-gold);
+
+    padding: 0.5em;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+} 
+
+nav li {
+    text-align: center;
+}
+
+nav a {
+    color: var(--midnight-blue);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* main styles */
+main {
+    background-color: var(--soft-white);
+    padding: 2em 1.2em;
+}
+
+h2 {
+    color: var(--midnight-blue);
+    font-size: 1.8em;
+    line-height: 1.8em;
+}
+
+main p {
+    color: var(--dark-charcoal);
+    font-size: 0.8em;
+    line-height: 1.5em;
+}
+
+hr {
+    margin: 1.5em 0;
+    height: 0.06em;
+    background-color: var(--champagne-gold);
+}
+
+/* main - offerings section styling */
+#offerings {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+}
+#offerings section {
+    background-color: var(--olive-green);
+    
+    padding: 1em 0.8em;
+    border-radius: 0.5em;
+    box-shadow: 2px 2px 4px var(--dark-charcoal);
+}
+
+#offerings section > h3, #offerings section > p, #offerings section > ul {
+    color: var(--linen);
+}
+
+#offerings section > h3 {
+    padding-bottom: 0.3em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#offerings section > ul {
+    list-style-type: disc;
+    list-style-position: inside;
+    font-size: 0.8em;
+    line-height: 1.5em;
+}
+
+
+footer {
+    background-color: var(--midnight-blue);
+    color: var(--soft-white);
+}
 /* MEDIA QUERY (medium) */
 
 /* MEDIA QUERY (large) */
