@@ -223,7 +223,47 @@ button > a {
 }
 
 footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    column-gap: 0.5em;
     background-color: var(--midnight-blue);
+
+    padding: 5em 7em 2em;
+    font-size: 0.8em;
+    text-align: center;
+    line-height: 1.4em;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer > address {
+    grid-column: 1/3;
+    color: var(--linen);
+}
+
+address + a {
+    grid-column: 1/3;
+    color: var(--linen);
+} 
+
+address + a + a {
+    grid-column: 1/3;
+}
+
+address + a + a + a {
+    text-align: right;
+}
+
+footer a:last-of-type {
+    text-align: left;
+}
+
+footer a + a, footer br + a {
+    color: var(--champagne-gold);
+    font-weight: bold;
 }
 
 /* MEDIA QUERY (medium) */
