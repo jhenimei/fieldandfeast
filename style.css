@@ -179,11 +179,53 @@ hr {
     line-height: 1.5em;
 }
 
+/* main - gallery styles */
+figure {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    margin: 1em 0;
+    background-color: var(--soft-white);
+    border-radius: 0.4em;
+    box-shadow: 2px 2px 4px var(--dark-charcoal);
+
+    text-align: center;
+}
+
+figure > img {
+    width: 100%;
+    border-top-left-radius: 0.4em;
+    border-top-right-radius: 0.4em;
+}
+
+figure > figcaption {
+    padding: 1em;
+    font-family: var(--playfair-display);
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+#gallery button {
+    width: 100%;
+    margin: 1em 0;
+    padding: 1em;
+    background-color: var(--olive-green);
+    border: none;
+    border-radius: 0.4em;
+}
+
+button > a {
+    color: var(--linen);
+    font-family: var(--playfair-display);
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+}
 
 footer {
     background-color: var(--midnight-blue);
-    color: var(--soft-white);
 }
+
 /* MEDIA QUERY (medium) */
 
 /* MEDIA QUERY (large) */
