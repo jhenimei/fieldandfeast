@@ -328,6 +328,10 @@ address + a + br + a {
 
 /* MEDIA QUERY (xl) */
 @media screen and (min-width: 1200px) {
+    header img {
+        width: 20%;
+    }
+    
     main {
         padding: 5em 10em;
     }
