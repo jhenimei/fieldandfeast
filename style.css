@@ -166,7 +166,7 @@ hr {
     color: var(--linen);
 }
 
-#offerings section > h3 {
+h3 {
     padding-bottom: 0.3em;
     font-size: 1.5em;
     font-weight: bold;
@@ -276,12 +276,67 @@ address + a + br + a {
 
 /* MEDIA QUERY (large) */
 @media screen and (min-width: 900px) {
-    
+    header img {
+        width: 30%;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    nav {
+        padding: 0.8em;
+    }
+
+    nav a {
+        font-size: 1.5em;
+    }
+
+    main {
+        padding: 3em;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    main p {
+        font-size: 1em;
+    }
+
+    #gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #gallery h2, #gallery p, #gallery button {
+        grid-column: 1/4;
+    }
+
+    figure figcaption {
+        font-size: 1em;
+    }
 }
 
 
 /* MEDIA QUERY (xl) */
 @media screen and (min-width: 1200px) {
-    
+    main {
+        padding: 5em 10em;
+    }
+    #gallery {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    #gallery h2, #gallery p, #gallery button {
+        grid-column: 1/6;
+    }
 }
 
